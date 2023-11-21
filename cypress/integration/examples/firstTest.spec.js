@@ -94,8 +94,12 @@ it('By ID', function() {
 });  
 
 <<<<<<< HEAD
-/// hei new comment
+/// hei new comment fff
 =======
 /// hei
+<<<<<<< HEAD
 /// hei 2 33
+>>>>>>> findElWithGetFingEq
+=======
+/// hei 2 /// hei 3
 >>>>>>> findElWithGetFingEq
