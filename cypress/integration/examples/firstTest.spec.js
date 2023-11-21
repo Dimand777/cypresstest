@@ -60,7 +60,7 @@ describe('My First Test suit 2', function()
 
 
 
-//GET and FIND
+//GET and FIND dddgg
 
 {
 it('By ID', function() {
@@ -94,12 +94,5 @@ it('By ID', function() {
 });  
 
 <<<<<<< HEAD
-/// hei new comment fff
-=======
-/// hei
-<<<<<<< HEAD
-/// hei 2 33
->>>>>>> findElWithGetFingEq
-=======
-/// hei 2 /// hei 3
->>>>>>> findElWithGetFingEq
+
+
