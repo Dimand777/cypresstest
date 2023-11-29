@@ -1,98 +1,49 @@
 /// <reference types="Cypress" />
 
-describe('My First Test suit 2', function()
-// {
-// it('By ID', function() {
-// cy.visit('https://facebook.com')
-// cy.get('#email')
-// });
 
-// it('By Class', function() {
-//     cy.visit('https://docs.cypress.io/api/table-of-contents')
-//     cy.get('.searchBox_ZlJk button[type="button"]').click()
-//     cy.get('.osano-cm-denyAll').click()
-//     cy.wait(5000); // Подождать 5 секунд (на ваше усмотрение)
-//     cy.get('input.DocSearch-Input').should('be.visible');
-    
-// });
-
-
-// it('By Tag Value', function() {
-//     cy.visit('https://facebook.com')
-//     cy.wait(1000); 
-//     cy.get('button[data-cookiebanner="accept_button"]').click();
-//     cy.wait(1000); 
-//     cy.get('[data-testid="royal_pass"]').type('hui'); // Используйте более точный селектор для паро
-//     cy.get
-// });
-
-// it('By different Tags Value', function() {
-//     cy.visit('https://facebook.com')
-//     cy.wait(1000); 
-//     cy.get('button[data-cookiebanner="accept_button"]').click();
-//     cy.wait(1000); 
-//     cy.get('[data-testid="royal_pass"]').type('hui'); // Используйте более точный селектор для паро
-//     cy.get('[data-testid="open-registration-form-button"][rel="async"]').click();
-// });
-
-
-// it('By different Types', function() {
-//     cy.visit('https://docs.cypress.io/api/table-of-contents')
-//     cy.wait(1000); 
-//     cy.get('button[type="button"][aria-label="Close"]').click();
- 
-// });
-
-
-// it.only('By contains name', function() {
-//     cy.visit('https://learn.cypress.io')// Ищем любой элемент* который начинается с what
-//     cy.get('*[class^="what"]')
-    
- 
-// });
-
-
-
-// })
-
-
-
-
-
-
-//GET and FIND dddgg
-
+describe('My Test suit', function()
 {
-it('By ID', function() {
-cy.visit('https://www.swedbank.ee/private/credit/loans/home?language=EST')
-cy.get('article').find('ul').eq(1) //eq - индекс элемента в списке
-});
+
+it('SHOULD', function() {
+    cy.visit('https://www.swedbank.ee/private/credit/loans/home');
+    cy.get('#total-income').type(5001)
+    .should('have.value', 5001)
+    .and('be.visible');
+  });
 
 
-it('By ID', function() {
-    cy.visit('https://www.swedbank.ee/private/credit/loans/home?language=EST')
-    cy.get('article').find('ui-buttonbar').find('.ui-buttonbar__left').click //eq - индекс элемента в списке
+  it('SHOULD', function() {
+    cy.visit('https://www.rahulshettyacademy.com/angularpractice/');
+    cy.get(':nth-child(1) > .form-control').type('5001')
+    cy.get(':nth-child(4) > .ng-untouched')
+    .should('have.value', 5001)
+    .and('be.visible');
+  });
 
-    });
+  it.only('EXPECT', function() {
+    cy.visit('https://www.rahulshettyacademy.com/angularpractice/');
+    cy.get('[name="email"]').type('test')
+    cy.get(':nth-child(4) > .ng-untouched')
+    .should('have.value', 5001)
+    .and('be.visible');
+  });
 
-it('By ID', function() {
-    cy.viewport(1800, 700)
-    cy.visit('https://docs.cypress.io/api/commands/eq')
-    cy.get('.table-of-contents').find('ul').eq(0).find('li').find('a').eq(0).click() //eq - индекс элемента в списке
-    
-    });
 
 
-    it.only('By ID', function() {
-        cy.viewport(1800, 700)
-        cy.visit('https://docs.cypress.io/api/commands/eq')
-        cy.get('.tableOfContents_bqdL').find('ul').eq(0).find('li').find('a').eq(0).click() //eq - индекс элемента в списке
-        
-        });
+  //cy.visit('https://www.rahulshettyacademy.com/angularpractice/shop');
 
-    
+
+
+
+
+
 });  
 
-<<<<<<< HEAD
+
+
+
+
+
+
 
 

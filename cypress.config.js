@@ -14,6 +14,8 @@ password: "3242"
     },
 
   chromeWebSecurity: false,
+  "experimentalRunEvents": true,
+  "defaultCommandTimeout": 10000,
   projectId: "sb6b6f",
   //npx cypress run --record --key 3f134dbb-c961-4bc7-be73-496189d9748e
    
